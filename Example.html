@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hojas de estilos</title>
+    <link rel="stylesheet" href="Estilos/Style.css">
+</head>
+
+<body>
+    
+<h1>Hojas de estilos</h1>
+
+<!-- Selector de etiqueta -->
+<p>En esta pagina estaremos viendo el uso de los estilos en los codigos html-5, continua leyendo para mas informacion.</p>
+<p>Si ya se dieron cuenta, este y el parrafo anterior tiene uso de Style.css especificamente: <br>
+    
+<ul>
+<li>Tipografia: Courier</li>
+<li>Color: Naranja</li>
+</ul>
+</p>
+
+<!-- Selector por ID -->
+
+<p id="aca">Este es un parrafo con selector id</p>
+<img id="logo" src="RECURSOS/yop.png" alt="Logo personal">
+
+<!-- Selector de clase -->
+
+<p class="highlight">Este párrafo tiene una clase.</p>
+<p class="importante">Este texto es importante.</p>
+
+<br>
+
+<Table border="">
+
+    <Caption> Tipos de Estilos </Caption>
+
+    <tr>
+    <th>Nombre</th>
+    <th>Funcion</th>
+    <th>Codigo</th>
+    <th>Codigo de estilo</th>
+    <th>Visual</th>
+    <th>Estilo</th>
+    </tr>
+
+    <tr>
+    <td>font-weight</td>
+    <td>Establece el grosor de la fuente.</td>
+    <td>p id="negrita">Texto en negrita/p></td>
+    <td>#negrita {font-weight: bold; }</td>
+    <td><p id="negrita">Texto en negrita</p></td>
+    <td>Externo por Id</td>
+    </tr>
+
+    <tr>
+    <td>padding</td>
+    <td>Controla el espacio interior de un elemento.</td>
+    <td>div id="padding">Contenido con padding/div></td>
+    <td>#padding { padding: 15px; }</td>
+    <td> <div id="padding">Contenido con padding</div> </td>
+    <td>Externo por Id</td>
+    </tr>
+
+    <tr>
+    <td>border</td>
+    <td>Añade un borde alrededor de un elemento.</td>
+    <td>div id="borde-verde">Borde verde/div></td>
+    <td>#borde-verde { border: 2px solid green; }</td>
+    <td><div id="borde-verde">Borde verde</div></td>
+    <td>Externo por Id</td>
+    </tr>
+
+    <tr>
+    <td>box-shadow</td>
+    <td>Añade sombra a un elemento.</td>
+    <td>div class="sombra">Este es un cuadro con sombra/div></td>
+    <td>.sombra { box-shadow: 2px 2px 5px gray; }</td>
+    <td><div class="sombra">Este es un cuadro con sombra</div></td>
+    <td>Externo por Clase</td>
+    </tr>
+
+    <tr>
+    <td>transition</td>
+    <td>Añade efectos de transición a los elementos.</td>
+    <td>img class="imagen-carrusel" src="img1.jpg"></td>
+    <td>.imagen-carrusel { transition: transform 0.5s; }</td>
+    <td><img class="imagen-carrusel" src="RECURSOS/yop.png"></td>
+    <td>Externo por Clase</td>
+    </tr>
+
+    <tr>
+    <td>background-colo</td>
+    <td>Establece el color de fondo de un elemento.</td>
+    <td>div id="fondo-azul">Tendras el fondo azul de tu texto, no el color de la letra./div></td>
+    <td>#fondo-azul { background-color: blue; }</td>
+    <td><div id="fondo-azul">Tendras el fondo azul o de otro color segun el color de preferencia que elijas debajo de tu texto, no el color de la letra</div></td>
+    <td>Externo por Id</td>
+    </tr>
+
+    <tr>
+    <td>transform</td>
+    <td>Aplica transformaciones a los elementos.</td>
+    <td>div class="caja">¡Pásame el mouse por encima!/div></td>
+    <td>.caja:hover { transform: translateY(-10px); }</td>
+    <td><div class="caja">¡Pásame el mouse por encima!</div></td>
+    <td>Externo por Clase</td>
+    </tr>
+    
+</Table>
+
+
+</body>
+</html>
