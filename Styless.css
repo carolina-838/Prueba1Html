@@ -1,7 +1,7 @@
 body {
     font-family: 'Georgia', serif;
     background-color: #f4f4f4;
-    color: #000000da;
+    color: #fcfbfbda;
     margin: 0;
     padding: 0;
 }
@@ -67,7 +67,7 @@ body {
 }
 
 h2 {
-    border-bottom: 2px solid #1000f3fb;
+    border-bottom: 2px solid #c5db5ffb;
     padding-bottom: 5px;
     margin-top: 20px;
     transition: transform 0.3s ease;
@@ -83,47 +83,88 @@ h2:hover {
     border-radius: 5px;
     background: #e9f8b5; /* Azul claro */
     transition: background-color 0.60s ease;
-    
-}
-
-.contenedor-contacto {
-    display: flex;
-    justify-content: space-between;
-    
 }
 
 .carrusel-contacto {
     display: flex;
     overflow: hidden;
-    width: 2000px; /* Ajusta el ancho del carrusel */
-    position:  relative;
+    width: 100%; /* Cambiar a 100% para que ocupe todo el espacio disponible */
 }
 
+.contacto {
+    margin: 20px 0;
+    padding: 100px;
+    border-radius: 5px;
+    background: #040500; /* Azul claro */
+    transition: background-color 0.60s ease;
+}
+
+.contenedor-contacto {
+    display: flex;
+    justify-content: space-around; /* Cambiar a space-around para más separación */
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten en varias líneas si es necesario */
+}
+
+
 .contacto-item {
-    min-width: 50px; /* Ajusta el ancho de cada item */
+    min-width: 120px; 
     text-align: center;
     transition: transform 0.3s ease;
+    margin: 20px; /* Añadir margen para separar los items */
 }
 
 .icono-contacto {
-    width: 180px; /* Tamaño del icono */
-    height: 220px;
+    width: 50px; /* Tamaño del icono */
+    height: 55px;
+    margin-bottom: 10px; /* Espacio entre el icono y el texto */
 }
 
-.info-contacto {
-    flex-grow: 1;
-    margin-left: 10px;
-}
-
-
-
-.sobre-mi, .experiencia, .educacion, .habilidades {
-    margin: 20px 0;
-    padding: 10px;
+.educacion {
+    margin: 20px 0; /* Reducir el margen superior e inferior */
+    padding: 20px; /* Reducir el padding interno */
     border-radius: 5px;
-    background: #4583af; 
+    background: #030025; 
     transition: background-color 0.3s ease;
 }
+
+.educacion-contenedor {
+    display: flex; /* Usar flexbox para la disposición */
+    flex-direction: column; /* Alinear elementos en columna */
+}
+
+.estudios-basicos, .estudios-tecnicos, .cursos-cortos {
+    margin-bottom: 15px; /* Espacio entre las secciones */
+}
+
+.estudio {
+    background: #0d043f;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px; /* Espacio entre el título y el contenido del estudio */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sobre-mi, .experiencia, .habilidades {
+    margin: 20px 0; /* Reducir el margen superior e inferior */
+    padding: 20px; /* Reducir el padding interno */
+    border-radius: 5px;
+    background: #010044; 
+    transition: background-color 0.3s ease;
+}
+
+.experiencia, .habilidades {
+    margin: 20px 0; /* Reducir el margen superior e inferior */
+    padding: 20px; /* Reducir el padding interno */
+    border-radius: 5px;
+    background: #1f0117; 
+    transition: background-color 0.3s ease;
+}
+
+.sobre-mi, .experiencia, .habilidades {
+    margin: 15px 0; /* Ajustar el margen para secciones específicas */
+    padding: 15px; /* Ajustar el padding para secciones específicas */
+}
+
 
 .tarjetas {
     display: flex;
@@ -133,13 +174,14 @@ h2:hover {
 
 .tarjeta {
     flex: 1;
-    margin: 0 5px;
-    padding: 100px;
+    margin: 0 8px;
+    padding: 100px; /* Reducir el padding para que el contenido tenga espacio */
     background: #bac2f0fd;
     color: rgb(99, 5, 192);
     border-radius: 5px;
     text-align: center;
     overflow: hidden; 
+    position: relative; /* Añadir posición relativa para el contenido */
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
@@ -151,25 +193,27 @@ h2:hover {
 .contenido {
     display: none;
     position: absolute;
-    top: 40%;
+    top: 50%; /* para centrar verticalmente */
     left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: left; width: auto;
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.9);
-    color: #100425;
+    transform: translate(-50%, -50%); /* Centrar el contenido */
+    text-align: left; 
+    width: 95%; /* Ajuste del ancho para que se adapte a la tarjeta */
+    padding: 150px;
+    background: rgba(1, 19, 1, 0.9);
+    color: #c4ee0a;
     border-radius: 2px;
-    }
-
-.tarjeta:hover .contenido {
-    display: block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añadir sombra para destacar el contenido */
 }
 
-.trabajo, .estudio {
+.tarjeta:hover .contenido {
+    display: block; /* Mostrar contenido al pasar el cursor */
+}
+
+.trabajo, {
     background: #fff;
     padding: 10px;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 5px; /* Reducir el margen inferior */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
