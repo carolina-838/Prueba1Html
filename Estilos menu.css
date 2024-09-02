@@ -1,0 +1,53 @@
+/* Estilos para el menu de navegacion */
+
+.nav{
+
+    display: flex; /*se utiliza el flex para distribuir el contenido de manera horizontal*/
+    justify-content: space-between; /*Es el espacio de los elementos a lo largo del eje principal*/
+    background-color: rgb(235, 129, 200); /*color de fondo*/
+    align-items: center; /*Alinea los elementos verticalmente*/
+    padding: ; /*espacio entre los elementos*/}
+
+
+
+    .logo img{
+    width: 60px;
+    border-radius: 15px;
+    padding: 10px
+    }
+
+    .navlink li a{
+
+    color: rgb(0, 0, 0);/*color del texto*/
+    text-decoration: none;
+    padding:  8px 15px;
+    }
+
+    .navlink{
+
+    list-style: none; /*elimina el subrayado del enlace del logo*/
+    display: flex; /*se utiliza el flex para distribuir el contenido de manera horizontal*/
+    gap: 15px;
+    }
+
+    .dropdown{
+    position: relative; /*posiciciona el contenedor del dropdown*/
+    }
+
+    .dropdown:hover .dropdown2 {display: block;} /*muestra el contenido cuando el cursor esta sobre el elemento*/
+
+    .dropdown2 a{
+    padding: 12px 16px; /*espacio de los enlaces*/
+    text-decoration: none;
+    display: block; /*enlaces ocupan todo el espacio del contenido*/
+    }
+
+    .dropdown2 { display: none; /*oculta el contenido del dropdown por defecto*/
+    position: absolute; /*posiciona el contenido respecto a su contenedor*/
+    background-color: brown,yellow,green;
+    min-width: 120px; /*Ancho minimo del contenido*/
+    box-shadow: 0px 8px 16px red0,0, 0.2; /*sombra alrededor para efecto profundo*/
+    }
+
+    .navlink li a:hover {background-color: blue; border-radius: 4px;}
+
