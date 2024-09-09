@@ -1,0 +1,28 @@
+.btn-secondary{
+    background-color:red ;
+}
+
+
+.container-fluid{ background-color: rgb(252, 198, 238);
+}
+.navbar-expand-lg{
+    color: aliceblue;
+}
+
+.dropdown-menu{
+    background-color: blue;
+    color: red;
+}
+
+.btn-outline-success{
+    background-color: rgb(243, 144, 114);
+    color: rgb(228, 98, 217);
+}
+
+.navbar-brand{
+    background-color: rgb(226, 43, 150); ;
+}
+
+.form-control{
+    background-color:rgb(247, 242, 242) ;
+}

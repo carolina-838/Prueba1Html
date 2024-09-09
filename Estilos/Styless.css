@@ -1,3 +1,26 @@
+
+.container-fluid{ background-color: rgb(247, 243, 246); 
+width: 50%;
+max-width: 1139px;
+margin: auto;
+background: #0c0b0c;
+border-radius: 5px;
+padding: 5px;
+
+}
+
+/* Cambiar el color de los enlaces a blanco */
+.nav-link, .dropdown-menu {color: rgb(247, 247, 247) !important; }
+
+.dropdown-item {color: rgb(10, 9, 9) !important; }
+
+.dropdown-item:hover {background-color: rgb(59, 55, 243) !important;}
+
+/* Cambiar el color del texto "Cree en ti y avanza." a fucsia */
+.nav-item .nav-link.disabled {
+    color: rgb(214, 4, 134) !important; 
+}
+
 body {
     font-family: 'Georgia', serif;
     background-color: #f4f4f4;
@@ -208,14 +231,6 @@ h2:hover {
 
 .tarjeta:hover .contenido {
     display: block; /* Mostrar contenido al pasar el cursor */
-}
-
-.trabajo, {
-    background: #fff;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 5px; /* Reducir el margen inferior */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .habilidades ul {
