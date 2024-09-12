@@ -221,7 +221,7 @@ h2:hover {
     left: 50%;
     transform: translate(-50%, -50%); /* Centrar el contenido */
     text-align: left; 
-    width: 95%; /* Ajuste del ancho para que se adapte a la tarjeta */
+    width: 150%; /* Ajuste del ancho para que se adapte a la tarjeta */
     padding: 150px;
     background: rgba(1, 19, 1, 0.9);
     color: #c4ee0a;
